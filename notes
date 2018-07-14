@@ -1,6 +1,4 @@
 https://blog.coding.net/blog/principle-of-Git
 
 
-SELECT definition  
-FROM sys.sql_modules  
-WHERE object_id = (OBJECT_ID(N'AdventureWorks2012.dbo.uspLogError'))
+https://social.technet.microsoft.com/Forums/sqlserver/en-US/4947ae62-850c-4b82-9aa5-7a4ea45ca2f9/get-the-table-structure-by-tsql-command
