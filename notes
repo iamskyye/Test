@@ -1,1 +1,6 @@
 https://blog.coding.net/blog/principle-of-Git
+
+
+SELECT definition  
+FROM sys.sql_modules  
+WHERE object_id = (OBJECT_ID(N'AdventureWorks2012.dbo.uspLogError'))
