@@ -2,3 +2,40 @@ https://blog.coding.net/blog/principle-of-Git
 
 
 https://social.technet.microsoft.com/Forums/sqlserver/en-US/4947ae62-850c-4b82-9aa5-7a4ea45ca2f9/get-the-table-structure-by-tsql-command
+
+
+
+
+
+
+Application: SmoExplorer2018.exe
+Framework Version: 
+v4.0.30319
+Description: The process was terminated due to an unhandled 
+exception.
+Exception Info: System.IO.FileLoadException
+   
+at SmoExplorer.Program..cctor()
+
+Exception Info: 
+System.TypeInitializationException
+   at 
+SmoExplorer.Program.Main()
+
+
+Faulting application name: 
+SmoExplorer2018.exe, version: 2.5.6774.29518, 
+time stamp: 0x5b504a9d
+Faulting module name: KERNELBASE.dll, version: 6.1.7601.24150, 
+time stamp: 0x5b0cbc65
+Exception code: 0xe0434352
+Fault offset: 
+0x000000000001a06d
+Faulting process id: 0x39d8
+Faulting application start 
+time: 0x01d422535618bd78
+
+Faulting module path: 
+C:\WINDOWS\system32\KERNELBASE.dll
+Report Id: 
+93fe6958-8e46-11e8-a7b6-480fcf560dbf
