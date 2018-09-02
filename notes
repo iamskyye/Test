@@ -11,7 +11,32 @@ https://stackoverflow.com/questions/11637348/encrypt-connection-string-in-app-co
 
 
 
-https://www.microsoft.com/en-us/download/confirmation.aspx?id=15104
+private void btnEncrption_Click(object sender, EventArgs e)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(System.Reflection.Assembly.GetEntryAssembly().Location);
+            ConfigurationSection section = config.GetSection("connectionStrings");
+
+            //ConfigurationSection section 
+
+            if (section != null && !section.SectionInformation.IsProtected)
+            {
+                section.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
+                config.Save();
+            }
+        }
+
+        private void btnDecrption_Click(object sender, EventArgs e)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(System.Reflection.Assembly.GetEntryAssembly().Location);
+            ConfigurationSection section = config.GetSection("connectionStrings");
+
+            if (section != null && section.SectionInformation.IsProtected)
+            {
+                section.SectionInformation.UnprotectSection();
+                config.Save();
+            }
+
+        }
 
 
 
